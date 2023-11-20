@@ -200,15 +200,34 @@ body {
   .rating-stars {
     flex-direction: row;
     align-items: center;
-    padding-block: 0;
+    padding-block: 1.25rem;
     padding-inline: 2rem;
-    gap: 2.03125rem;
-    line-height: 1;
-    
+  }
+  .rating-stars:first-child {
+    transform: translateX(-5.625rem);
+  }
+
+  .rating-stars:nth-child(2) {
+    transform: translateX(-2.9375rem);
   }
 
   .rating-stars-text {
     margin-block-start: 0;
+    margin-inline-start: 2.02rem;
+  }
+
+  .testimonial-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block-start: 4.4375rem;
+    gap: 1.875rem;
+  }
+
+  .card:nth-child(2) {
+    transform: translateY(1rem);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(2rem);
   }
 
 }
