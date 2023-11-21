@@ -21,12 +21,6 @@
   --clr-ne-white: hsl(0, 0%, 100%);
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 *,
 *::before,
 *::after {
@@ -49,8 +43,11 @@ svg {
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--ff-body);
-  background-color: var(--clr-ne-white);
+  background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
   padding-inline: 1.5rem;
 }
 
@@ -166,6 +163,7 @@ body {
 @media screen and (min-width: 1438px) {
 
   body {
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
     padding-inline: 10.3125rem;
   }
 
